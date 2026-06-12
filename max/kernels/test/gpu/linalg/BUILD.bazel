@@ -67,6 +67,7 @@ _EXTRA_CONSTRAINTS = {
         "//:nvidia_gpu",
         "//:has_multi_gpu",
     ],
+    "test_vendor_blas_strided.mojo": ["//:nvidia_gpu"],
     "test_mxfp4_dequant_smoke.mojo": select({
         "//:h100_gpu": ["//:h100_gpu"],
         "//:amd_gpu": ["//:amd_gpu"],
